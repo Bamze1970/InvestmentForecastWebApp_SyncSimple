@@ -1,0 +1,17 @@
+{
+  "name": "Investment Forecast",
+  "short_name": "Forecast",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0b1220",
+  "theme_color": "#0f172a",
+  "description": "Инвестиционна прогноза със sync между устройства",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
