@@ -1,15 +1,12 @@
-# Investment Forecast – Sync template for two phones
+# Investment Forecast – Sync FIXED
 
-Тази версия позволява синхронизация между два телефона чрез Firebase Firestore.
+Поправки в тази версия:
+- modal прозорецът за Sync вече се крие надеждно
+- добавен е .hidden CSS клас
+- добавени са принудителни version query strings ?v=2
+- сменен е service-worker cache key на v2
 
-## Стъпки за настройка
-1. Създай Firebase проект.
-2. Включи Authentication -> Anonymous.
-3. Включи Firestore Database.
-4. Попълни `config.js` с твоя Firebase config.
-5. Качи файловете в GitHub Pages.
-6. На двата телефона отвори приложението и въведи еднакъв **Portfolio ID** от бутона **Sync**.
-
-## Как работи
-- Ако два телефона имат един и същи Portfolio ID, промените по количество/цена се синхронизират.
-- Gold и Silver: количество в грамове, цена в €/тр. унция.
+Настройка:
+1. Попълни config.js с твоя Firebase config.
+2. Качи файловете в GitHub Pages.
+3. Ако старата версия е кеширана, изтрий приложението от телефона и отвори сайта наново.

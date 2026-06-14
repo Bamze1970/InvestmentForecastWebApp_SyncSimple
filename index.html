@@ -1,16 +1,17 @@
 <!doctype html>
 <html lang="bg"><head>
-<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="theme-color" content="#0f172a" />
 <title>Investment Forecast</title>
 <link rel="manifest" href="manifest.webmanifest" />
 <link rel="icon" href="icon.svg" type="image/svg+xml" />
-<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="styles.css?v=2" />
 </head><body>
 <header class="topbar"><div><h1>Investment Forecast</h1><p class="sub">Sync между два телефона</p></div><div class="header-actions"><button id="syncBtn" class="secondary-btn">Sync</button><button id="resetBtn" class="secondary-btn">Reset</button></div></header>
-<div id="statusBar" class="status-bar"></div>
+<div id="statusBar" class="status-bar">Зареждане…</div>
 <main class="container"><section id="dashboardView"></section><section id="editorView"></section></main>
-<div id="syncModal" class="modal hidden"><div class="modal-card"><h2>Sync настройки</h2><p class="note">Въведи еднакъв Portfolio ID на двата телефона.</p><label>Portfolio ID</label><input id="portfolioIdInput" type="text" placeholder="например boris-portfolio-01" /><div class="modal-actions"><button id="saveSyncBtn" class="primary">Запази</button><button id="closeSyncBtn" class="secondary-btn">Затвори</button></div></div></div>
-<script src="config.js"></script>
-<script type="module" src="app.js"></script>
+<div id="syncModal" class="modal hidden" aria-hidden="true"><div class="modal-card"><h2>Sync настройки</h2><p class="note">Въведи еднакъв Portfolio ID на двата телефона.</p><label for="portfolioIdInput">Portfolio ID</label><input id="portfolioIdInput" type="text" placeholder="например boris-portfolio-01" /><div class="modal-actions"><button id="saveSyncBtn" class="primary">Запази</button><button id="closeSyncBtn" class="secondary-btn">Затвори</button></div></div></div>
+<script src="config.js?v=2"></script>
+<script type="module" src="app.js?v=2"></script>
 </body></html>
